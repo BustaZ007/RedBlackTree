@@ -13,10 +13,8 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="RedBlackTree.sln" t="IncludeFlat" />
       <e p="RedBlackTreeProject" t="IncludeRecursive">
-        <e p="ANode.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Colors.cs" t="Include" />
-        <e p="Nil.cs" t="Include" />
         <e p="Node.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
