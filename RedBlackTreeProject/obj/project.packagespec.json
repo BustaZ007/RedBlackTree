@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\Вувка\\RiderProjects\\RedBlackTree\\RedBlackTree\\RedBlackTree.csproj",
-    "projectName": "RedBlackTree",
-    "projectPath": "C:\\Users\\Вувка\\RiderProjects\\RedBlackTree\\RedBlackTree\\RedBlackTree.csproj",
-    "outputPath": "C:\\Users\\Вувка\\RiderProjects\\RedBlackTree\\RedBlackTree\\obj\\",
+    "projectUniqueName": "C:\\Users\\Вувка\\RiderProjects\\RedBlackTree\\RedBlackTreeProject\\RedBlackTreeProject.csproj",
+    "projectName": "RedBlackTreeProject",
+    "projectPath": "C:\\Users\\Вувка\\RiderProjects\\RedBlackTree\\RedBlackTreeProject\\RedBlackTreeProject.csproj",
+    "outputPath": "C:\\Users\\Вувка\\RiderProjects\\RedBlackTree\\RedBlackTreeProject\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.1"

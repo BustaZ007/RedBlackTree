@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Вувка\\RiderProjects\\RedBlackTree\\RedBlackTree\\RedBlackTree.csproj",
-      "projectName": "RedBlackTree",
-      "projectPath": "C:\\Users\\Вувка\\RiderProjects\\RedBlackTree\\RedBlackTree\\RedBlackTree.csproj",
+      "projectUniqueName": "C:\\Users\\Вувка\\RiderProjects\\RedBlackTree\\RedBlackTreeProject\\RedBlackTreeProject.csproj",
+      "projectName": "RedBlackTreeProject",
+      "projectPath": "C:\\Users\\Вувка\\RiderProjects\\RedBlackTree\\RedBlackTreeProject\\RedBlackTreeProject.csproj",
       "packagesPath": "C:\\Users\\Вувка\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Вувка\\RiderProjects\\RedBlackTree\\RedBlackTree\\obj\\",
+      "outputPath": "C:\\Users\\Вувка\\RiderProjects\\RedBlackTree\\RedBlackTreeProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Вувка\\AppData\\Roaming\\NuGet\\NuGet.Config"

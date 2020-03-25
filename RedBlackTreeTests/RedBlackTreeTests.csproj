@@ -14,7 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\RedBlackTree\RedBlackTree.csproj" />
+      <ProjectReference Include="..\RedBlackTreeProject\RedBlackTreeProject.csproj" />
     </ItemGroup>
 
 </Project>

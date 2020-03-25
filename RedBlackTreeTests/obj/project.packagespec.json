@@ -15,8 +15,8 @@
     "frameworks": {
       "netcoreapp3.1": {
         "projectReferences": {
-          "C:\\Users\\Вувка\\RiderProjects\\RedBlackTree\\RedBlackTree\\RedBlackTree.csproj": {
-            "projectPath": "C:\\Users\\Вувка\\RiderProjects\\RedBlackTree\\RedBlackTree\\RedBlackTree.csproj"
+          "C:\\Users\\Вувка\\RiderProjects\\RedBlackTree\\RedBlackTreeProject\\RedBlackTreeProject.csproj": {
+            "projectPath": "C:\\Users\\Вувка\\RiderProjects\\RedBlackTree\\RedBlackTreeProject\\RedBlackTreeProject.csproj"
           }
         }
       }

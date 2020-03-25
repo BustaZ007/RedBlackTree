@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedBlackTree", "RedBlackTree\RedBlackTree.csproj", "{F64B9460-27C7-4248-95BA-CC309B526DB5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedBlackTreeProject", "RedBlackTreeProject\RedBlackTreeProject.csproj", "{F64B9460-27C7-4248-95BA-CC309B526DB5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedBlackTreeTests", "RedBlackTreeTests\RedBlackTreeTests.csproj", "{D6D76E56-3213-47FE-8B3D-F6C08B1CB22F}"
 EndProject

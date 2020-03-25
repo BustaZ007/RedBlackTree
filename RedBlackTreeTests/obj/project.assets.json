@@ -2030,14 +2030,14 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "RedBlackTree/1.0.0": {
+      "RedBlackTreeProject/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "compile": {
-          "bin/placeholder/RedBlackTree.dll": {}
+          "bin/placeholder/RedBlackTreeProject.dll": {}
         },
         "runtime": {
-          "bin/placeholder/RedBlackTree.dll": {}
+          "bin/placeholder/RedBlackTreeProject.dll": {}
         }
       }
     }
@@ -6875,10 +6875,10 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "RedBlackTree/1.0.0": {
+    "RedBlackTreeProject/1.0.0": {
       "type": "project",
-      "path": "../RedBlackTree/RedBlackTree.csproj",
-      "msbuildProject": "../RedBlackTree/RedBlackTree.csproj"
+      "path": "../RedBlackTreeProject/RedBlackTreeProject.csproj",
+      "msbuildProject": "../RedBlackTreeProject/RedBlackTreeProject.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6886,7 +6886,7 @@
       "MSTest.TestAdapter >= 2.0.0",
       "MSTest.TestFramework >= 2.0.0",
       "Microsoft.NET.Test.Sdk >= 16.2.0",
-      "RedBlackTree >= 1.0.0",
+      "RedBlackTreeProject >= 1.0.0",
       "coverlet.collector >= 1.0.1"
     ]
   },
@@ -6914,8 +6914,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Вувка\\RiderProjects\\RedBlackTree\\RedBlackTree\\RedBlackTree.csproj": {
-              "projectPath": "C:\\Users\\Вувка\\RiderProjects\\RedBlackTree\\RedBlackTree\\RedBlackTree.csproj"
+            "C:\\Users\\Вувка\\RiderProjects\\RedBlackTree\\RedBlackTreeProject\\RedBlackTreeProject.csproj": {
+              "projectPath": "C:\\Users\\Вувка\\RiderProjects\\RedBlackTree\\RedBlackTreeProject\\RedBlackTreeProject.csproj"
             }
           }
         }
