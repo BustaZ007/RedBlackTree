@@ -15,8 +15,12 @@ namespace RedBlackTree
         }
 
         public void InsertNode(int value){}
-        
-        public void DeleteNode(int value){}
+
+        public bool DeleteNode(int value)
+        {
+            return true;
+            
+        }
         
         public void LeftRotation(Node node){}
         
