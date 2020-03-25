@@ -14,7 +14,10 @@ namespace RedBlackTree
             _allNodes.Add(_root);
         }
 
-        public void InsertNode(int value){}
+        public bool InsertNode(int value)
+        {
+            return true;
+        }
 
         public bool DeleteNode(int value)
         {

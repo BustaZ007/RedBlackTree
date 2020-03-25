@@ -38,6 +38,15 @@ namespace RedBlackTreeTests
                 Assert.AreEqual(true, res, "Red parent can have only black child");
             }
         }
+        [TestMethod]
+        public void CheckForNodeExistenceWhenInserting()
+        {
+            RedBlackTree.RedBlackTree tree = new RedBlackTree.RedBlackTree(12);
+            tree.InsertNode(8);
+            tree.InsertNode(17);
+            Assert.AreEqual(true, tree.InsertNode(5));
+            Assert.AreEqual(false, tree.InsertNode(8));
+        }
         
         [TestMethod]
         public void CheckLenghtListOfNodesAfterDelete()
@@ -75,7 +84,7 @@ namespace RedBlackTreeTests
         }
         
         [TestMethod]
-        public void CheckForNodeExistence()
+        public void CheckForNodeExistenceWhenDeleting()
         {
             RedBlackTree.RedBlackTree tree = new RedBlackTree.RedBlackTree(12);
             tree.InsertNode(8);
