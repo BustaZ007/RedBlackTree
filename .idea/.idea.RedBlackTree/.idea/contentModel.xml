@@ -13,6 +13,8 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="RedBlackTree" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Colors.cs" t="Include" />
+        <e p="Node.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -21,6 +23,7 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
+        <e p="RedBlackTree.cs" t="Include" />
         <e p="RedBlackTree.csproj" t="IncludeRecursive" />
       </e>
       <e p="RedBlackTree.sln" t="IncludeFlat" />
