@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Threading;
 
 namespace RedBlackTree
@@ -46,10 +47,36 @@ namespace RedBlackTree
 
         public bool DeleteNode(int value)
         {
+            if (!_allNodes.Select(n => n.GetValue()).Contains(value))
+                return false;
+            Node deleteNode = FindNodeByValue(value);
+            Node replaceNode;
+            if (!deleteNode.GetLeft().IsNil() && !deleteNode.GetRight().IsNil())
+            {
+                replaceNode = deleteNode.GetLeft();
+                
+                while (!replaceNode.GetRight().IsNil())
+                    replaceNode = replaceNode.GetRight();
+                
+                deleteNode.SetValue(replaceNode.GetValue());
+                
+                if (replaceNode.GetLeft().IsNil() && replaceNode.GetRight().IsNil())
+                    DeleteWithoutChild(replaceNode);
+                else
+                    DeleteOneChild(replaceNode);
+            }
+            else if(deleteNode.GetLeft().IsNil() && deleteNode.GetRight().IsNil())
+                DeleteWithoutChild(deleteNode);
+            else
+                DeleteOneChild(deleteNode);
+
+            _allNodes.Remove(deleteNode);
             return true;
-            
         }
 
+        private Node FindNodeByValue(int value) => 
+            _allNodes.Find(n => n.GetValue() == value);
+        
         private void InsertCase1(Node node)
         {
             if(node.GetParent() == null)
@@ -145,6 +172,15 @@ namespace RedBlackTree
                     child.Repaint();
                 else
                     DeleteCase1(child);
+        }
+
+        private void DeleteWithoutChild(Node node)
+        {
+            Node p = node.GetParent();
+            if(p.GetLeft() == node)
+                p.SetLeft(new Node(null, p));
+            else
+                p.SetRight(new Node(null, p));
         }
 
         private void DeleteCase1(Node node)

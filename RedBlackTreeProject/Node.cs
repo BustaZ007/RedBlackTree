@@ -6,7 +6,7 @@ namespace RedBlackTree
     public class Node 
     {
         private Color _color;
-        private readonly int? _value;
+        private int? _value;
         private Node _left;
         private Node _right;
         private Node _parent;
@@ -32,6 +32,11 @@ namespace RedBlackTree
         public void SetRight(Node right)
         {
             _right = right;
+        }
+
+        public void SetValue(int? value)
+        {
+            _value = value;
         }
 
         public Color GetColor() => _color;
