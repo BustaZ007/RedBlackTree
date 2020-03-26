@@ -128,8 +128,8 @@ namespace RedBlackTreeTests
                           node.GetRight().GetColor() == Color.Black && node.GetLeft().GetColor() == Color.Black;
                 }
                 Assert.AreEqual(true, res, "Red parent can have only black child");
-                Assert.AreEqual(tree.FindNodeByValue(8), tree.GetRoot());
             }
+            Assert.AreEqual(8, tree.GetRoot().GetValue());
         }
     }
 }

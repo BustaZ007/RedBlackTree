@@ -35,16 +35,36 @@ namespace RedBlackTree
                     currentNode = currentNode.GetLeft();
                 }
             }
-            currentNode.GetParent().AddChild(value);
-            Node newNode = currentNode.GetParent().GetLeft().GetValue() == value
-                ? currentNode.GetParent().GetLeft()
-                : currentNode.GetParent().GetRight();
+
+            Node newNode;
+            if (currentNode != _root)
+            {
+                currentNode.GetParent().AddChild(value);
+                newNode = currentNode.GetParent().GetLeft().GetValue() == value
+                    ? currentNode.GetParent().GetLeft()
+                    : currentNode.GetParent().GetRight();
+            }
+            else
+            {
+                _root = new Node(value);
+                newNode = _root;
+            }
             _allNodes.Add(newNode);
+            CheckRoot();
             InsertCase1(newNode);
-            
             return true;
         }
 
+        public void CheckRoot()
+        {
+            foreach (var node in _allNodes)
+            {
+                if (node.GetParent() == null)
+                {
+                    _root = node;
+                }
+            }
+        }
         public bool DeleteNode(int value)
         {
             if (!_allNodes.Select(n => n.GetValue()).Contains(value))
@@ -176,6 +196,11 @@ namespace RedBlackTree
 
         private void DeleteWithoutChild(Node node)
         {
+            if (node == _root)
+            {
+                _root = new Node(null);
+                return;
+            }
             Node p = node.GetParent();
             if(p.GetLeft() == node)
                 p.SetLeft(new Node(null, p));
