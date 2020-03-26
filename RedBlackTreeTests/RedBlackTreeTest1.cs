@@ -106,6 +106,7 @@ namespace RedBlackTreeTests
             Assert.AreEqual(false, tree.DeleteNode(11));
             Assert.AreEqual(true, tree.InsertNode(14));
             Assert.AreEqual(1, tree.GetAllNodes().Count);
+            Assert.AreEqual(tree.FindNodeByValue(14), tree.GetRoot());
         }
 
         [TestMethod]
@@ -117,7 +118,6 @@ namespace RedBlackTreeTests
             tree.InsertNode(1);
             tree.DeleteNode(12);
             tree.InsertNode(11);
-            tree.InsertNode(15);
             tree.InsertNode(25);
             foreach (var node in tree.GetAllNodes())
             {
@@ -128,6 +128,7 @@ namespace RedBlackTreeTests
                           node.GetRight().GetColor() == Color.Black && node.GetLeft().GetColor() == Color.Black;
                 }
                 Assert.AreEqual(true, res, "Red parent can have only black child");
+                Assert.AreEqual(tree.FindNodeByValue(8), tree.GetRoot());
             }
         }
     }

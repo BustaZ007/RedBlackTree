@@ -74,7 +74,7 @@ namespace RedBlackTree
             return true;
         }
 
-        private Node FindNodeByValue(int value) => 
+        public Node FindNodeByValue(int value) => 
             _allNodes.Find(n => n.GetValue() == value);
         
         private void InsertCase1(Node node)
